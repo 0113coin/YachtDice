@@ -155,6 +155,27 @@ int main() {
     printf("\nEnter a number to select a mode (1: Single play, 2: VS Computer): ");
     scanf("%d", &mode);
 
+    // Easter Egg!
+    if (mode == 123456) {
+    system("cls");
+    printf("Easter egg found!\n\n");
+    printf("================================\n");
+    printf("  _     _     _     _     _     \n");
+    printf(" | |   | |   | |   | |   | |    \n");
+    printf(" | |   | |   | |   | |   | |    \n");
+    printf(" | |   | |   | |   | |   | |    \n");
+    printf(" |_____|_____|_____|_____|____| \n");
+    printf("          YACHT DICE           \n");
+    printf("================================\n");
+    Sleep(1000);
+    printf("\nMade by HyeonSeok Song, EunSu Kim, SeongJun Park\n");
+    Sleep(2000);
+    printf("\n^_^\n");
+    Sleep(2000);
+
+    return 0;
+}
+
     for (int turn = 0; turn < NUM_CATEGORIES; turn++) {
         printf("\n--- Turn %d ---\n", turn + 1);
 
